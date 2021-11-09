@@ -1,0 +1,30 @@
+<div Class="bg-white text-center"> 
+   <br>
+   <h1 class="display -4">Student Management App / Add new Students</h1>
+   <hr class="my-4">
+   <p>(This Page can be Used to Add new Students Info) </p>
+   <!-- <p>This System can be Used to Add new Students , Display , Update and Delete Existing Students Info </p> -->
+   <hr class="my-4">
+</div>
+<div class="mx-5">
+<form [formGroup]="studentForm">
+      <div class="form-group mb-3">
+         <labeL class="form-label">Name(*) :</labeL><input formControlName="name" type="text" class="form-control" placeholder="Enter Name" [ngClass]="name.invalid && name.touched ? 'is-invalid' : ''">
+      </div>
+      <div class="form-group mb-3">
+         <label class="form-label">Address :</label><input formControlName="address" type="text" class="form-control" placeholder="Enter Address">
+      </div>
+      <div class="form-group mb-3">
+         <label class="form-label">Email ID(*) :</label><input type="email" formControlName="email" class="form-control" placeholder="Enter Email" [ngClass]="email.invalid && email.touched ? 'is-invalid' : ''">
+      </div>
+      <div class="form-group mb-4">
+         <label class="form-label">Phone Number(*) :</label><input formControlName="phone" type="text" class="form-control" placeholder="Enter Phone" [ngClass]="{'is-invalid': phone.invalid && phone.touched}" maxlength="10">
+      </div>
+      <div class="text-center"><br> 
+      <button type="submit" class="btn btn-outline-danger" style="width:200px" (click)="addNewStudents()">Submit</button>&nbsp;&nbsp;
+      <button type="reset" class="btn btn-outline-primary" style="width:200px" (click)="studentForm.reset()">Reset</button>
+   </div>
+</form>
+</div>
+
+<!-- [disabled]="studentForm.invalid" -->

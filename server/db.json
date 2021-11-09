@@ -1,0 +1,46 @@
+{
+  "studentsInfo": [
+    {
+      "name": "Alok Ranjan",
+      "address": "Cuttack",
+      "email": "alok.kumar@gmail.com",
+      "phone": 9861232666,
+      "id": 1
+    },
+    {
+      "name": "Manoj Patra",
+      "address": "Pune",
+      "email": "manoj.patra01@gmail.com",
+      "phone": 7205337564,
+      "id": 2
+    },
+    {
+      "id": 3,
+      "name": "Anil Dash",
+      "address": "Bhubaneswar",
+      "email": "anil.dash@gmail.com",
+      "phone": 8102364787
+    },
+    {
+      "id": 4,
+      "name": "Suraj Kapoor",
+      "address": "Mumbai",
+      "email": "suraj.kapoor@gmail.com",
+      "phone": 7788352410
+    },
+    {
+      "name": "Ranjan loya",
+      "address": "Pandav Nagar, Bhubaneswar",
+      "email": "ms2313535@gmail.com",
+      "phone": "7978785415",
+      "id": 5
+    },
+    {
+      "name": "Ritik Baid",
+      "address": "kendrapada",
+      "email": "ritik.baid@gmail.com",
+      "phone": "7856321440",
+      "id": 6
+    }
+  ]
+}

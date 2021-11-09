@@ -1,0 +1,26 @@
+<div class="bg-white text-center">
+   <br>
+   <h1>Student Management App / Update Students</h1>
+   <hr class="mb-3">
+   <p>(This page is used to Update the Existing Student Data)</p>
+   <hr class="mb-3">
+</div>
+<div class="mx-5">
+   <form [formGroup]="updateStudent">
+      <div class="form-group mb-3">
+         <label class="form-label">Name(*) :</label><input type="text" formControlName="name" class="form-control" [class.is-invalid]="name.invalid && name.touched">
+      </div>
+      <div class="form-group mb-3">
+         <label class="form-label">Address :</label><input type="text" formControlName="address" class="form-control">
+      </div>
+      <div class="form-group mb-3">
+         <label class="form-label">Email ID(*) :</label><input type="email" formControlName="email" class="form-control" [ngClass]="{'is-invalid': email.invalid && email.touched}">
+      </div>
+      <div class="form-group mb-3">
+         <label class="form-label">Phone(*) :</label><input type="text" formControlName="phone" class="form-control" [ngClass]="phone.invalid && phone.touched ? 'is-invalid' : ''" maxlength="10">
+      </div>
+      <br>
+      <div class="text-center"><button type="button" class="btn btn-outline-danger" (click)="UpdateStudentData()">Update Data</button></div>
+   </form>
+</div>
+<!-- [disabled]="updateStudent.invalid" -->
